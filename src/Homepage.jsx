@@ -51,13 +51,13 @@ const homepage = () => {
 
     
     return ( 
-        <div className="w-10/12 ml-auto mr-auto mt-20">
-            <div className="flex">
-                <div className="flex-shrink-0 flex-nowrap w-5/12">
-                    <img className="w-10/12 h-auto rounded-md mb-3" src={CurrentPicture}/>
-                    <div className="flex items-center gap-7">
+        <div className="lg:w-10/12 w-full lg:ml-auto ml-0 lg:mr-auto lg:mt-20 mt-3">
+            <div className="lg:flex">
+                <div className="lg:flex-shrink-0 lg:flex-nowrap lg:w-5/12">
+                    <img className="lg:w-10/12 w-full h-auto  lg:rounded-md mb-3" src={CurrentPicture}/>
+                    <div className="hidden lg:flex items-center gap-7">
                         {pictures.map((pictureurl , index) => (
-                            <img  className="w-auto h-16 rounded-md" 
+                            <img  className="w-[78px] h-auto rounded-md" 
                             key={index}
                             src={thumbnails[index]}
                             onClick={() => handlePictureClick(pictureurl)}
@@ -66,10 +66,10 @@ const homepage = () => {
                     </div>
                 </div>
 
-                <div className="w-5/12 flex-shrink-0 flex-nowrap ml-0 mt-10"> 
+                <div className="lg:w-5/12 w-11/12 flex-shrink-0 flex-nowrap lg:mt-10 mt-1 ml-auto mr-auto lg:ml-0 lg:mr-0"> 
                     <h1 className="text-left">
-                        <span className="block font-bold uppercase text-xs text-orange-500 pb-5">sneaker company</span>
-                        <span className="block font-semibold text-[45px] leading-none">Fall limited edition sneakers</span>
+                        <span className="block font-bold uppercase text-xs text-orange-500 lg:pb-5 pb-2">sneaker company</span>
+                        <span className="block font-semibold lg:text-[45px] text-[35px] leading-none">Fall limited edition sneakers</span>
                     </h1>
 
                     <p className="text-left text-sm pt-5 pb-6 text-gray-400">
@@ -77,23 +77,28 @@ const homepage = () => {
                        durable rubber outer sole, they’ll withstand everything the weather can offer.
                     </p>
 
-                    <p>
-                        <div className="flex items-center gap-3">
-                            <span className="font-bold text-xl">$125.00</span>
-                            <span className="font-semibold text-xs bg-orange-100 rounded-md text-orange-600 px-1 py-[1px] h-fit">50%</span>
-                        </div>
-                    </p>
+                    <div className="lg:grid flex justify-between">
+                       <p>
+                          <div className="flex items-center gap-3">
+                              <span className="font-bold text-xl">$125.00</span>
+                              <span className="font-semibold text-xs bg-orange-100 rounded-md text-orange-600 px-1 py-[1px] h-fit">50%</span>
+                          </div>
+                       </p>
 
-                    <p className="text-left font-semibold text-sm text-gray-400 mb-5">$250.00</p>
+                       <p className="text-left font-semibold text-sm text-gray-400 mb-5">$250.00</p>
 
-                    <div className="flex gap-5">
-                        <div className="flex gap-3 bg-stone-100 h-10 items-center rounded-md px-2 ">
+                    </div>
+
+
+                  
+                    <div className="lg:flex grid gap-5">
+                        <div className="flex justify-evenly gap-3 bg-stone-100 h-10 items-center rounded-md lg:px-2 ">
                             <button onClick={decreaseCount} className="text-2xl font-semibold text-orange-500 pr-5 ">-</button>
                             <p className="w-fit bg-transparent font-semibold text-gray-500">{count}</p>
                             <button onClick={increaseCount} className="text-2xl font-semibold text-orange-500 pl-5">+</button>
                         </div>
 
-                        <div className="flex items-center bg-orange-500 px-10 h-10 gap-2 rounded-md">
+                        <div className="flex justify-center items-center bg-orange-500 lg:px-10 h-10 gap-2 lg:w-fit w-full rounded-md mb-10">
                             <img className="w-3 h-3 text-white" src={cart}/>
                             <p className="font-semibold text-white">Add to cart</p>
                         </div>
