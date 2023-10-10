@@ -2,8 +2,17 @@ import logo from './assets/logo.svg'
 import cart from './assets/icon-cart.svg'
 import avatar from './assets/image-avatar.png'
 import Menu from './Menu'
+// import {useState} from 'react'
+
+    
+        
 
 const Navbar = () => {
+  // const [count, Addtocart] = useState(0)
+  //   const handleButtonClick = () => {
+  //       Addtocart({count})
+  //   }
+
     return (  
         <div className="w-11/12 ml-auto mr-auto mt-6">
           <div className="flex justify-between items-center pb-2">
@@ -21,12 +30,17 @@ const Navbar = () => {
                  <a>Contact</a>   
                 </div>
                   
-               </div>
+              </div>
 
-               <div className="flex items-center gap-10">
+              <div className="flex items-center gap-10">
+              
+               <div>
                  <img src={cart}/>
-                 <img className="w-auto h-10" src={avatar}/>
+                 {/* <p>{count}</p> */}
                </div>
+        
+                 <img className="w-auto h-10" src={avatar}/>
+              </div>
             </div>
 
             <div className="hidden lg:block bg-stone-300 w-full h-[1px]"></div>
