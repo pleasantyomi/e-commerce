@@ -87,7 +87,7 @@ const homepage = () => {
 
 
     return ( 
-        <div className="lg:w-10/12 w-full lg:ml-auto ml-0 lg:mr-auto lg:mt-20 mt-3">
+        <div className="relative lg:w-10/12 w-full lg:ml-auto ml-0 lg:mr-auto lg:mt-20 mt-3">
             <div className="lg:flex">
                 <div className="lg:flex-shrink-0 lg:flex-nowrap lg:w-5/12">
                     <div className="relative">
@@ -96,7 +96,7 @@ const homepage = () => {
 
                     <div className="relative lg:hidden block">
                         <div className="">
-                            <div className="absolute top-[50%] -translate-y-1/2 left-[1rem]">
+                            <div className="z-0 absolute top-[50%] -translate-y-1/2 left-[1rem]">
                                <button onClick={handlePrevious} disabled={image === 0} className="relative bg-red-100 w-10 h-10 rounded-full">
                                  <img  className="absolute ml-auto mr-auto top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 " src={previous}/>
                                </button>

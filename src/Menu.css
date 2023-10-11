@@ -1,0 +1,14 @@
+.hideMenu{
+    display: none;
+}
+
+.showMenu{
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60vw;
+    height: 100vh;
+    z-index: 10;
+}

@@ -2,19 +2,14 @@ import logo from './assets/logo.svg'
 import cart from './assets/icon-cart.svg'
 import avatar from './assets/image-avatar.png'
 import Menu from './Menu'
-// import {useState} from 'react'
 
     
         
 
 const Navbar = () => {
-  // const [count, Addtocart] = useState(0)
-  //   const handleButtonClick = () => {
-  //       Addtocart({count})
-  //   }
 
     return (  
-        <div className="w-11/12 ml-auto mr-auto mt-6">
+        <div className="relative lg:w-11/12 lg:ml-auto lg:mr-auto px-4 mt-6">
           <div className="flex justify-between items-center pb-2">
               <div className="flex items-center gap-5 text-gray-400">
                 <div className="flex items-center gap-3">
